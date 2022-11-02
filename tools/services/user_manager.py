@@ -10,6 +10,22 @@ from tools.interfaces import IPlatform
 stopping = False
 
 def start(args, unlocked_cb=None):
+    system_apps = [
+        "com.android.calculator2",
+        "com.android.camera2",
+        "com.android.contacts",
+        "com.android.deskclock",
+        "com.android.documentsui",
+        "com.android.email",
+        "com.android.gallery3d",
+        "com.android.inputmethod.latin",
+        "com.android.settings",
+        "com.google.android.gms",
+        "org.lineageos.eleven",
+        "org.lineageos.etar",
+        "org.lineageos.jelly",
+        "org.lineageos.recorder"
+    ]
 
     def makeDesktopFile(appInfo):
         showApp = False
@@ -27,6 +43,8 @@ def start(args, unlocked_cb=None):
             lines.append("Name=" + appInfo["name"])
             lines.append("Exec=waydroid app launch " + packageName)
             lines.append("Icon=" + args.waydroid_data + "/icons/" + packageName + ".png")
+            if packageName in system_apps:
+                lines.append("NoDisplay=true")
             desktop_file = open(desktop_file_path, "w")
             for line in lines:
                 desktop_file.write(line + "\n")
