@@ -3,7 +3,7 @@
 # Waydroid
 
 Waydroid uses a container-based approach to boot a full Android system on a
-regular GNU/Linux system like Ubuntu, Fedora, Arch, PostmarketOS, Mobian, Ubuntu Touch, Droidian and more (see install instructions).
+regular GNU/Linux system like Fedora, Arch, Ubuntu, PostmarketOS, Mobian, Ubuntu Touch, Droidian and more (see install instructions).
 
 ## Overview
 
