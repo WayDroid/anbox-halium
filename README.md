@@ -31,7 +31,7 @@ Our documentation site can be found at [docs.waydro.id](https://docs.waydro.id)
 
 If you have found an issue with Waydroid, please [file a bug](https://github.com/Waydroid/waydroid/issues/new).
 
-Check for existent bugs first, to reduce unnecessary work.
+Check for existing bugs first, to reduce unnecessary work.
 
 ## Get in Touch
 
