@@ -3,7 +3,7 @@
 # Waydroid
 
 Waydroid uses a container-based approach to boot a full Android system on a
-regular GNU/Linux systems as well as PostmarketOS.
+regular GNU/Linux system as well as PostmarketOS.
 
 ## Overview
 
